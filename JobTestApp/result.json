@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Vasya",
+    "count": 9
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "supervisorId": 1,
+    "count": 6
+  },
+  {
+    "id": 3,
+    "name": "Alexander",
+    "supervisorId": 1,
+    "count": 1
+  },
+  {
+    "id": 4,
+    "name": "Sam",
+    "supervisorId": 2,
+    "count": 5
+  },
+  {
+    "id": 5,
+    "name": "Sam",
+    "supervisorId": 4,
+    "count": 0
+  },
+  {
+    "id": 6,
+    "name": "Sam",
+    "supervisorId": 4,
+    "count": 3
+  },
+  {
+    "id": 7,
+    "name": "Sam",
+    "supervisorId": 6,
+    "count": 2
+  },
+  {
+    "id": 8,
+    "name": "Sam",
+    "supervisorId": 7,
+    "count": 1
+  },
+  {
+    "id": 9,
+    "name": "Sam",
+    "supervisorId": 8,
+    "count": 0
+  },
+  {
+    "id": 10,
+    "name": "Sam",
+    "supervisorId": 3,
+    "count": 0
+  }
+]
