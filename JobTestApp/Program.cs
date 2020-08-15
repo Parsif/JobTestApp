@@ -24,6 +24,9 @@ namespace JobTestApp
              [JsonProperty(PropertyName = "count")]
              public int Count { get; set; }
 
+             [JsonProperty(PropertyName = "type")]
+             public string Type { get; set; }
+
              public bool ShouldSerializeSupervisorId()
              {
                  return SupervisorId != -1;
@@ -46,8 +49,16 @@ namespace JobTestApp
             {
                 foreach (var child in Children)
                 {
+                 
                     var numOfChildren = child.Count();
-                    Employee.Count += numOfChildren + 1;
+                    if (child.Employee.Type == "department")
+                    {
+                        Employee.Count += numOfChildren;
+                    }
+                    else
+                    {
+                        Employee.Count += numOfChildren + 1;
+                    }
                 }
 
                 return Employee.Count;
